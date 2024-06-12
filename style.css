@@ -308,6 +308,7 @@ body {
 
     .target__text {
         font-size: 1rem;
+        font-family: Arial;
     }
 
     .target__main:hover {
