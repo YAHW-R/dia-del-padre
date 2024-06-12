@@ -1,0 +1,329 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.target__main {
+    position: absolute;
+    top: calc(50% - 30vh);
+    left: 20%;
+    width: 60%;
+    height: 60vh;
+    background-color: #2af;
+    color: black;
+    border-radius: 20px;
+
+    transform: scaleX(0.2);
+
+}
+
+.title {
+    font-size: 7rem;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.target__text {
+    font-size: 1.5rem;
+    font-family: cursive;
+    margin: 25px 60px;
+    text-align: center;
+}
+
+.corazon {
+    width: 80px;
+    height: 80px;
+
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.corazon:hover {
+    scale: 1.15;
+}
+
+.corazon:active {
+    scale: .9;
+}
+
+
+
+#heart1 {
+    transform: rotate(20deg);
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+#heart2 {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    transform: rotate(-20deg);
+}
+
+.mini__heart {
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    width: 20px;
+    height: 20px;
+}
+
+.mini__heart__after1 {
+    animation: mini__heart__animation;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+.mini__heart__after2 {
+    animation: mini__heart__animation2;
+    animation-duration: .5s;
+    animation-fill-mode: both;
+}
+
+@keyframes mini__heart__animation {
+    10% {
+        transform: translateY(30px) scale(1.2);
+    }
+
+    80% {
+        transform: translate(100px, -60px) scale(4.3);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes mini__heart__animation2 {
+    10% {
+        transform: translateY(-30px) scale(1.2);
+    }
+
+    80% {
+        transform: translate(-100px, -60px) scale(4.3);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.target__before {
+    position: absolute;
+    top: calc(50% - 30vh);
+    left: 40%;
+    width: 20%;
+    height: 60vh;
+    background-image: url(/img/traje.avif);
+    background-position: center;
+    color: white;
+    border-radius: 10%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.title2 {
+    font-family: 'Times New Roman', Times;
+    padding: 10px;
+    margin-top: 50px;
+    cursor: pointer;
+    background-color: #111;
+    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 5px;
+}
+
+.title2:hover {
+    scale: 1.3;
+}
+
+.title2:active {
+    transform: scaleX(1.8) scaleY(.8) translate(20px);
+}
+
+.add__target {
+    transform: scaleX(1);
+    transition: all .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.add__target:hover {
+    scale: 1.2;
+}
+
+.delet__card {
+    transform: translateY(-200%);
+    /* transform: rotateY(-90deg); */
+    /* transform-origin: left; */
+    transition: all 1s .7s;
+}
+
+.globos {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.globo {
+    width: 140px;
+    height: 200px;
+
+    transform: translateY(350%);
+    display: none;
+}
+
+#globo1 {
+    fill: #2af;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-delay: 0;
+}
+
+#globo2 {
+    fill: #b1f;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-delay: .3s;
+}
+
+#globo3 {
+    fill: greenyellow;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-delay: .5s;
+}
+
+#globo4 {
+    fill: chartreuse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-delay: 0;
+}
+
+#globo5 {
+    fill: chocolate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-delay: .7s;
+}
+
+#globo6 {
+    fill: crimson;
+    animation-duration: 2.2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-delay: .2s;
+}
+
+#globo7 {
+    fill: cyan;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-delay: .1s;
+}
+
+#globo8 {
+    fill: darkorange;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-delay: .4s;
+}
+
+#globo9 {
+    fill: burlywood;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-delay: 0;
+}
+
+#globo10 {
+    fill: coral;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-delay: 1.2s;
+}
+
+.globo__animation__class {
+    animation-name: globos__animation;
+    display: inline;
+}
+
+@keyframes globos__animation {
+    100% {
+        transform: translate(100px, -200%);
+    }
+}
+
+@media (max-width: 769px) {
+    .target__before {
+        width: 80%;
+        height: 70vh;
+        top: calc(50% - 35vh);
+        left: 10%;
+        background-size: 200%;
+        background-repeat: no-repeat;
+    }
+
+    .title2 {
+        font-size: 1.5rem;
+    }
+
+    .title2:active {
+        transform: scaleX(1.5) scaleY(.9) translate(10px);
+
+    }
+
+    .target__main {
+        width: 100%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+
+    .target__text {
+        font-size: 1rem;
+    }
+
+    .target__main:hover {
+        scale: 1;
+    }
+
+    .globo {
+        transform: translateY(500%);
+    }
+
+    .corazon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .mini__heart {
+        width: 10px;
+        height: 10px;
+    }
+}
