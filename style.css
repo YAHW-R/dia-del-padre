@@ -307,8 +307,8 @@ body {
     }
 
     .target__text {
-        font-size: 1rem;
-        font-family: Arial;
+        font-size: 1.2rem;
+        font-family: Arial, Sans-Serif;
     }
 
     .target__main:hover {
