@@ -124,7 +124,8 @@ body {
     left: 40%;
     width: 20%;
     height: 60vh;
-    background-image: url("img/traje.avif");
+    background-color: black;
+    background-image: url("/img/traje.avif");
     background-position: center;
     color: white;
     border-radius: 10%;
